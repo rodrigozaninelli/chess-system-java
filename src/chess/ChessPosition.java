@@ -29,6 +29,22 @@ public class ChessPosition {
     //'c'-'a' = 2
     //matris_column = chess_column - 'a'
 
+    /*
+    Matrix xadrex
+    a1 = 0,0
+
+    1 _ _ _ _ _ _ _ _
+    2 _ _ _ _ _ _ _ _
+    3 _ _ _ _ _ _ _ _
+    4 _ _ _ _ _ _ _ _
+    5 _ _ _ _ _ _ _ _
+    6 _ _ _ _ _ _ _ _
+    7 _ _ _ _ _ _ _ _
+    8 _ _ _ _ _ _ _ _
+      a b c d e f g h
+
+     */
+    //converte posição de xadres em uma posição de matrix normal = a1 = 0,0
     protected Position toPosition(){
         return new Position(8 - row, column - 'a');
     }
